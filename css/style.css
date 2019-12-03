@@ -102,14 +102,17 @@ a.navbar-brand,
   padding: 20px 0;
 }
 
-.ms_color_nav {
-  background-color: #34495e;
-}
-
 .navbar_color {
   background-color: rgb(44, 62, 80);
 }
 
+.navbar-toggle {
+  color: #ffffff;
+  font-size: 1.1em;
+  background-color: rgb(26, 188, 156);
+  border-radius: 10px;
+
+}
 .portfolio {
   padding-bottom: 50px;
 }
