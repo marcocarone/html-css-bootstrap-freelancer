@@ -55,11 +55,14 @@ a.navbar-brand,
 
 .portfolio {
   padding-bottom: 50px;
+
 }
 
 .portfolio img {
   width: 100%;
-  padding-top: 40px;
+  cursor: pointer;
+  border-radius: 15px;
+  margin-bottom: 30px;
 }
 
 .about {
@@ -84,7 +87,6 @@ a.navbar-brand,
 @media all and (min-width: 1200px) {
   .jumbotron h1 {
     font-size: 4.7em;
-    font-weight: 700;
-    color: #ffffff;
+
   }
   }
