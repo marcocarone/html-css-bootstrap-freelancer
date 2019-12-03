@@ -1,5 +1,5 @@
 .jumbotron {
-  background-color:rgb(26, 188, 156);
+  background-color: rgb(26, 188, 156);
   margin-top: 80px;
   padding: 70px 0;
 }
@@ -13,15 +13,17 @@
   font-weight: 700;
   color: #ffffff;
 }
+
 .jumbotron p {
   font-size: 1.4em;
   font-weight: 400;
   color: #ffffff;
   padding: 10px 0;
 }
+
 .navbar-brand {
-    font-size: 2em;
-    font-weight: bold;
+  font-size: 2em;
+  font-weight: bold;
 }
 
 .ms_nav {
@@ -43,4 +45,22 @@
 .portfolio img {
   width: 100%;
   padding-top: 40px;
+}
+
+.about {
+  background-color: rgb(26, 188, 156);
+  padding: 70px 0;
+  color: #ffffff;
+}
+
+.footer_top {
+  background-color: rgb(44, 62, 80);
+  padding: 70px 0;
+  color: #ffffff;
+}
+
+.copyright {
+  background-color: #1a252f;
+  padding: 30px 0 20px 0;
+  color: #ffffff;
 }
