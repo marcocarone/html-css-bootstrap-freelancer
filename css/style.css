@@ -1,0 +1,46 @@
+.jumbotron {
+  background-color:rgb(26, 188, 156);
+  margin-top: 80px;
+  padding: 70px 0;
+}
+
+.jumbotron img {
+  width: 230px;
+}
+
+.jumbotron h1 {
+  font-size: 3em;
+  font-weight: 700;
+  color: #ffffff;
+}
+.jumbotron p {
+  font-size: 1.4em;
+  font-weight: 400;
+  color: #ffffff;
+  padding: 10px 0;
+}
+.navbar-brand {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.ms_nav {
+  padding: 20px 0;
+}
+
+.ms_color_nav {
+  background-color: #34495e;
+}
+
+.navbar {
+  background-color: rgb(44, 62, 80);
+}
+
+.portfolio {
+  padding-bottom: 50px;
+}
+
+.portfolio img {
+  width: 100%;
+  padding-top: 40px;
+}
