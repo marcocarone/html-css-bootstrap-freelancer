@@ -1,0 +1,259 @@
+* {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+h2 {
+  font-size: 3em;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 2em;
+  font-weight: 700;
+  padding-bottom: 20px;
+}
+
+/* DIVISORE SEZIONI */
+hr {
+  width: 300px;
+  border-radius: 5px;
+}
+
+hr:after {
+  content: "\f005";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: 2em;
+  left: 50%;
+  position: absolute;
+  transform: translateY(-50%) translateX(-50%);
+  padding: 10px 25px;
+}
+
+/* JUMBOTRON */
+.jumbotron {
+  background-color: rgb(26, 188, 156);
+  margin-top: 80px;
+  padding: 70px 0;
+}
+
+.jumbotron img {
+  width: 230px;
+}
+
+.jumbotron h1 {
+  font-size: 3em;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.jumbotron p {
+  font-size: 1.4em;
+  font-weight: 400;
+  color: #ffffff;
+  padding: 10px 0;
+}
+
+.jumbotron hr,
+.about hr {
+  border-top: 4px solid #ffffff;
+}
+
+.jumbotron hr:after,
+.about hr:after {
+  color: #ffffff;
+  background: rgb(26, 188, 156);
+}
+
+.portfolio hr,
+.contact_me hr {
+  border-top: 4px solid rgb(44, 62, 80);
+}
+
+.portfolio hr:after,
+.contact_me hr:after {
+  color: rgb(44, 62, 80);
+  background: #ffffff;
+}
+
+.p_35 {
+  padding: 5px 0 30px 0;
+}
+
+/* NAVBAR */
+.navbar-brand {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+a.navbar-brand,
+.navbar-nav>li>a {
+  color: #ffffff;
+}
+
+.navbar-nav>li>a {
+  font-weight: 700;
+  font-size: 1.2em;
+}
+
+.navbar-nav>li>a:hover {
+  background-color: rgba(255, 255, 255, 0);
+  color: rgb(26, 188, 156);
+}
+
+.ms_nav {
+  padding: 20px 0;
+}
+
+.navbar_color {
+  background-color: rgb(44, 62, 80);
+}
+
+.navbar-toggle {
+  color: #ffffff;
+  font-size: 1.1em;
+  background-color: rgb(26, 188, 156);
+  border-radius: 10px;
+}
+
+/* INIZIO PORTFOLIO */
+.portfolio {
+  padding-bottom: 50px;
+}
+
+.portfolio img {
+  border-radius: 15px;
+  width: 100%;
+}
+
+/* BOX IMMAGINI CON EFFETTO OVERLAY */
+.box_image {
+  position: relative;
+  width: 100%;
+  cursor: pointer;
+  border-radius: 15px;
+  margin-bottom: 30px;
+}
+
+/* effetto overlay dell'immagine */
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .3s ease;
+  background-color: rgb(26, 188, 156);
+  border-radius: 15px;
+}
+
+/* al passaggio del mouse sul box_image */
+.box_image:hover .overlay {
+  opacity: 0.9;
+}
+
+/* icona dentro in box_image */
+.icon {
+  color: #ffffff;
+  font-size: 100px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.fa-plus:hover {
+  color: #ffffff;
+}
+
+/* SEZIONE ABOUT */
+.about {
+  background-color: rgb(26, 188, 156);
+  padding: 70px 0;
+  color: #ffffff;
+}
+
+.about p,
+.footer_top p {
+  font-size: 1.3em;
+}
+
+.button {
+  background-color: rgb(26, 188, 156);
+  border: 3px solid #ffffff;
+  border-radius: 5px;
+  padding: 20px 40px;
+  font-size: 1.3em;
+  margin-top: 25px;
+}
+
+.button:hover {
+  background-color: #ffffff;
+  color: rgb(26, 188, 156);
+  transition: 1s;
+}
+
+/* INIZIO CONTACT ME */
+.contact_me {
+  padding: 60px;
+}
+
+.ms_form {
+  width: 100%;
+  height: 40px;
+  border: 2px solid #ffffff;
+  border-bottom: 1px solid rgb(227, 227, 227);
+  padding: 40px;
+  margin-bottom: 10px;
+  font-size: 1.4em;
+  color: rgb(115, 126, 144);
+}
+
+.text_area {
+  height: 200px;
+}
+
+/* INIZIO FOOTER */
+.footer_top {
+  background-color: rgb(44, 62, 80);
+  padding: 70px 0;
+  color: #ffffff;
+}
+
+.copyright {
+  background-color: #1a252f;
+  padding: 30px 0 20px 0;
+  color: #ffffff;
+}
+
+.footer_top a {
+  color: rgb(26, 188, 156);
+}
+
+.icon_footer i {
+  color: #ffffff;
+  padding: 15px;
+  border: 3px solid #ffffff;
+  border-radius: 100%;
+  margin-right: 5px;
+}
+
+.icon_fa i {
+  padding: 15px 18px;
+}
+
+/* MEDIA QUERY */
+@media all and (min-width: 1200px) {
+  .jumbotron h1 {
+    font-size: 4.7em;
+  }
+}
