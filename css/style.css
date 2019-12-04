@@ -17,6 +17,23 @@ h3 {
   padding-bottom: 20px;
 }
 
+/* DIVISORE SEZIONI */
+hr {
+  width: 300px;
+  border-radius: 5px;
+}
+
+hr:after {
+  content: "\f005";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: 2em;
+  left: 50%;
+  position: absolute;
+  transform: translateY(-50%) translateX(-50%);
+  padding: 10px 25px;
+}
+
 /* JUMBOTRON */
 .jumbotron {
   background-color: rgb(26, 188, 156);
@@ -39,23 +56,6 @@ h3 {
   font-weight: 400;
   color: #ffffff;
   padding: 10px 0;
-}
-
-/* DIVISORE SEZIONI */
-hr {
-  width: 300px;
-  border-radius: 5px;
-}
-
-hr:after {
-  content: "\f005";
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
-  font-size: 2em;
-  left: 50%;
-  position: absolute;
-  transform: translateY(-50%) translateX(-50%);
-  padding: 10px 25px;
 }
 
 .jumbotron hr,
@@ -126,12 +126,56 @@ a.navbar-brand,
 }
 
 .portfolio img {
+  border-radius: 15px;
+  width: 100%;
+}
+
+/* BOX IMMAGINI CON EFFETTO OVERLAY */
+.box_image {
+  position: relative;
   width: 100%;
   cursor: pointer;
   border-radius: 15px;
   margin-bottom: 30px;
 }
 
+/* effetto overlay dell'immagine */
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .3s ease;
+  background-color: rgb(26, 188, 156);
+  border-radius: 15px;
+}
+
+/* al passaggio del mouse sul box_image */
+.box_image:hover .overlay {
+  opacity: 0.9;
+}
+
+/* icona dentro in box_image */
+.icon {
+  color: #ffffff;
+  font-size: 100px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.fa-plus:hover {
+  color: #ffffff;
+}
+
+/* SEZIONE ABOUT */
 .about {
   background-color: rgb(26, 188, 156);
   padding: 70px 0;
@@ -201,6 +245,12 @@ a.navbar-brand,
   border: 3px solid #ffffff;
   border-radius: 100%;
   margin-right: 5px;
+}
+
+.icon_fa i {
+
+  padding: 15px 18px;
+
 }
 
 /* MEDIA QUERY */
