@@ -17,6 +17,7 @@ h3 {
   padding-bottom: 20px;
 }
 
+/* JUMBOTRON */
 .jumbotron {
   background-color: rgb(26, 188, 156);
   margin-top: 80px;
@@ -119,6 +120,7 @@ a.navbar-brand,
   border-radius: 10px;
 }
 
+/* INIZIO PORTFOLIO */
 .portfolio {
   padding-bottom: 50px;
 }
@@ -201,6 +203,7 @@ a.navbar-brand,
   margin-right: 5px;
 }
 
+/* MEDIA QUERY */
 @media all and (min-width: 1200px) {
   .jumbotron h1 {
     font-size: 4.7em;
